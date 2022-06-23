@@ -1,0 +1,213 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;  
+    height:100%;
+    scroll-padding-top: 6rem;
+  }
+  
+  footer {
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .static {
+    font-weight: bolder;
+    font-size:2rem;
+    text-align: center;
+  }
+  
+  .chilli-ways {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .chilli-products {
+    padding:0.5rem;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  #product-text {
+    font-size: 1.1rem;
+    padding: 0px 2rem;
+    text-align: justify;
+  }
+  .par {
+      height:250px;
+  }
+  
+  .parallax {
+    background-image: url("https://www.publicdomainpictures.net/pictures/190000/velka/red-chili-peppers-1472570277yaJ.jpg");
+    background-size: cover;
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  iframe {
+    padding-bottom: 5rem;
+  }
+  
+  /* form */
+  #form {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+  
+  input {
+    font-size: 1.2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  
+  #submit {
+    margin:0;
+    padding: 0.2rem 1.5rem;
+    background-color: rgb(254,170,0);
+    color:white;
+    border:none;
+    transition: 2s;
+  }
+  
+  #submit:hover {
+    transform: scale(1.2);
+  }
+  
+  /* NAV */
+  #nav-bar {
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    top:0;
+    height:6rem;
+    position: fixed;
+    background-color: white;
+    }
+  
+  
+  #navi {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:2rem;
+    width: 100%;
+    list-style-type: none;
+    font-weight: bolder;
+  }
+  
+  li a{
+    text-decoration: none;
+    padding: 0px 2rem;
+    color:black;
+    font-size: 1.3rem;
+  }
+  
+  /* COMPANY LOGO */
+  .logo {
+    display: flex;
+    margin:0rem 1rem;
+    margin-right: 0;
+    height:6rem;
+    max-width:100vw;
+  }
+  
+  #companyName {
+    align-self: flex-start;
+    margin:1rem 6.5rem;
+    margin-right: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-size: 3.5rem;
+  }
+  
+  .chi-top {
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 5px -7px 0px -4px rgb(0, 102, 0);
+    /* transform: rot=ate(-45deg); */
+    position: absolute;
+    z-index: 1;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    left: 45px;
+    top:10px;
+  }
+  
+  .bonbon_logo {
+    position: absolute;
+    background-color: white;
+    height:5rem;
+    border-color: rgb(199, 0, 23);
+    border-style: solid;
+    width:2.5rem;
+    border-width: 0px 2.5rem 0px 0px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+  }
+  
+  .bonbon_logo::before {
+    content:'';
+    position: absolute;
+    top:0;
+    background: rgb(199, 0, 23);
+    left:50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-color: rgb(0, 102, 0);
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-radius: 50%;
+  }
+  
+  .bonbon_logo::after {
+    content:'';
+    position: absolute;
+    top:2.5rem;
+    background: white;
+    left:50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px 3px 0px 0px;
+    border-radius: 50%;
+  }
+  
+  /* RESPONSIVENESS */
+  @-ms-viewport{
+    width: device-width;
+  }
+  
+  @media only screen and (max-width:800px) {
+    .logo {
+      transform: scale(0.8);
+      transform-origin: left;
+    }
+    #navi {
+      margin-left:-5rem;
+  }}
+  
+  @media only screen and (max-width:700px) {
+    #navi {
+      transform: scale(0.7);
+      padding:0 1rem;
+      flex-direction: column;
+      align-items: flex-end;
+  }}
